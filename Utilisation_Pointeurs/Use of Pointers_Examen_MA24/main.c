@@ -16,27 +16,44 @@ int main()
     int annee = 0;
     int mois = 0;
     int jour = 0;
+    //Activation de la boucle "while"
+    int boucle = 1;
+
+    printf("\n  |----------------------------------------------------------|");
+    printf("\n  | DECOMPOSITION DU NOMBRE DE JOURS EN ANNEE, MOIS ET JOURS |\n");
+    printf("  |----------------------------------------------------------|\n\n");
 
 
-    printf("\n    DECOMPOSITION DU NOMBRE DE JOURS EN ANNEE, MOIS ET JOURS\n\n");
+    printf("    Veuillez entrer un nombre de jours: ");
 
-    printf("    Veuillez entrer un nombre de jours: "); //Test avec une valeur introduit par l'utilisateur. Exemple: 6772 jours. Resultat attendu: 18 annees, 9 mois et 22 jours.
-    scanf("%i", &jour);
 
-    printf("\n\n    Voici la decomposition pour %i jours:\n\n", jour);
+    while(boucle){
+        scanf("%i", &jour);
+        if(jour<0){ //Erreur en cas de nombre négatif
+            printf("\n\n   ERREUR: Veuillez entrer un entier positif: " );
+        }
+        else{
+            printf("\n\n    Voici la decomposition pour %i jours:\n\n", jour);
 
-    //Utilisation de la fonction de décomposition. Récupération des adresses mémoire des variables annee, mois, jour
-    Decomposition_Annee_Mois_Jour(&annee, &mois, &jour);
+            //Utilisation de la fonction de décomposition. Récupération des adresses mémoire des variables annee, mois, jour
+            Decomposition_Annee_Mois_Jour(&annee, &mois, &jour);
 
-    //Affichage de la decomposition
-    printf("    Annees:      %i\n", annee);
-    printf("    Mois:        %i\n", mois);
-    printf("    Jours:       %i\n\n", jour);
+            //Affichage de la decomposition
+            printf("    Annees:      %i\n", annee);
+            printf("    Mois:        %i\n", mois);
+            printf("    Jours:       %i\n\n", jour);
+
+
+            printf("    Preuve mathematique: (%i annees * 360) + (%i mois * 30) + %i jours = %i jours\n\n", annee, mois, jour, annee*360+mois*30+jour);
+            boucle = 0; //Desactivation de la boucle
+        }
+    }
 
     return EXIT_SUCCESS;
 }
 
-/** \brief Récupération et transformation de la valeur à l'adresse mémoire des variables
+
+/** \brief Récupération transformation de la valeur à l'adresse mémoire des variables
  *
  * \param anneePointeur int*
  * \param moisPointeur int*
