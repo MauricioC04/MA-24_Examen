@@ -11,15 +11,18 @@ int main()
     /*Initialisation des variables à zéro*/
     int annee = 0;
     int mois = 0;
-    int jour = 0;
+
+    /*Premier test automatique avec une valeur prédéfinie. Resultat attendu: 5 annees, 3 mois, 6 jours*/
+    int jour = 1896;
 
 
     printf("DECOMPOSITION DU NOMBRE DE JOURS EN ANNEE, MOIS ET JOURS\n\n");
 
+    printf("Voici la decomposition pour %i jours:\n\n", jour);
+
     //Utilisation de la fonction de décomposition. Récupération des adresses mémoire des variables annee, mois, jour
     Decomposition_Annee_Mois_Jour(&annee, &mois, &jour);
 
-    printf("Voici la decomposition:\n\n");
     printf("Annees: %i\n", annee);
     printf("Mois: %i\n", mois);
     printf("Jours: %i\n", jour);
