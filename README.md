@@ -1,4 +1,4 @@
-MA-24_Examen# MA-24 - Examen
+# MA-24 - Examen
 
 *-------------------------------------------------  
 **Auteur:** Mauricio COSTA CABRAL  
@@ -17,8 +17,13 @@ En langage de programmation C, l'utilisation des pointeurs est une thématique t
 
 ### DEMARCHE D'APPRENTISSAGE
 
-J'ai commencé tout d'abord par taper quelques mots-clés simples, comme par exemple "Programmation C pointeurs". Très rapidement, je suis tombé sur le site internet "Openclassrooms" qui possède une excellente réputation en matière de cours informatiques. J'ai utilisé également quelques vidéos "Youtube", afin d'avoir d'autres exemples de programmation et d'imaginer mon propre programme qui me permettra de mettre en pratique l'utilisation ainsi que la compréhension des pointeurs en langage C.
+J'ai commencé tout d'abord par taper quelques mots-clés simples, comme par exemple "Programmation C pointeurs". Très rapidement, je suis tombé sur le site internet "Openclassrooms" qui possède une excellente réputation en matière de cours informatiques.  
+* https://openclassrooms.com/fr/courses/1894236-programmez-avec-le-langage-c/1896772-declarez-les-pointeurs
+* https://openclassrooms.com/fr/courses/19980-apprenez-a-programmer-en-c/15417-a-lassaut-des-pointeurs
 
+J'ai utilisé également quelques vidéos "Youtube", afin d'avoir d'autres exemples de programmation et d'imaginer mon propre programme qui me permettra de mettre en pratique l'utilisation ainsi que la compréhension des pointeurs en langage C.  
+* https://www.youtube.com/watch?v=h-HBipu_1P0
+* https://www.youtube.com/watch?v=5BpYD7TxvKU
 
 ### REALISATION DU PROJET
 
